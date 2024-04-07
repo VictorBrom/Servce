@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for i in contract%}
+<table style="border: 1px solid black">
+<tr style="border: 1px solid black">Договор №{{i.numbers}}  -  от {{i.date}}  -  сумма {{i.total}}  -  действует {{i.status}}</tr>
+{% endfor %}
+</table>
+<button type="button"><a href="create_contracts">Создать контракт</a></button>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for i in partners%}
+    <li><a href="/partners/{{i.id}}">{{i.name}}</a></li>
+{% endfor %}
+<button type="button"><a href="create_partner">Перевод</a></button>
+</body>
+</html>
